@@ -1,6 +1,6 @@
-﻿namespace ToDoList
+﻿namespace ToDoList.Models
 {
-    public class LifeSphere
+    public class LifeSphere : ILifeSphere
     {
         public int Id { get; set; }
         public string Title { get; set; }

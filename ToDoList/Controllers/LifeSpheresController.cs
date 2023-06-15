@@ -1,28 +1,41 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ToDoList.Models;
+using ToDoList.Services;
 
 namespace ToDoList.Controllers
 {
-    public class LifeSpheresController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class LifeSpheresController : ControllerBase
     {
-        public static List<LifeSphere> Spheres { get; set; } = new List<LifeSphere>();
+        private readonly ILifeSphereRegister lifeSphereRegister;
+
+        public LifeSpheresController(ILifeSphereRegister lifeSphereRegister)
+        {
+            this.lifeSphereRegister = lifeSphereRegister;
+        }
 
         [HttpGet]
-        public ActionResult<bool> GetTasks()
+        public ActionResult<bool> GetLifeSpheres()
         {
-            return Ok(Spheres);
+            var lifeSpheres = lifeSphereRegister.GetLifeSpheres();
+            if (lifeSpheres.Count > 0)
+                return Ok(lifeSpheres);
+            else
+                return StatusCode(204);
         }
 
         [HttpPost]
         public ActionResult<bool> AddLifeSphere([FromBody] CreateLifeSphereRequest request)
         {
-            LifeSphere lifeSphere = new ()
+            LifeSphere lifeSphere = new()
             {
-                Id = Spheres.Count,
+                Id = lifeSphereRegister.GetLifeSpheres().Count,
                 Title = request.Title,
                 Grade = request.Grade,
                 Description = request.Description
             };
-            Spheres.Add(lifeSphere);
+            lifeSphereRegister.AddLifeSphere(lifeSphere);
             return Ok(lifeSphere);
         }
 
@@ -30,33 +43,29 @@ namespace ToDoList.Controllers
         [HttpPut]
         public ActionResult<bool> UpdateLifeSphere(int id, [FromBody] CreateLifeSphereRequest request)
         {
-            var lifeSphere = Spheres.FirstOrDefault(x => x.Id == id);
+            var lifeSphere = lifeSphereRegister.UpdateLifeSphere(id, request);
             if (lifeSphere != null)
-            {
-                lifeSphere.Title = request.Title;
-                lifeSphere.Grade = request.Grade;
-                lifeSphere.Description = request.Description;
-                return Ok(lifeSphere);
-            }
-            return StatusCode(204, new { ErrorMessage = "this item doen't exist or wrong id."});
+                return Ok();
+            else
+                return StatusCode(204);
         }
 
         [HttpDelete("{id}")]
         public ActionResult<bool> DeleteLifeSphere(int id, [FromQuery] string title)
         {
-            var lifeSphere = Spheres.FirstOrDefault(x => x.Id == id && x.Title == title);
-            if (lifeSphere == null) 
-                return StatusCode(204, new { ErrorMessage = "this item doen't exist or wrong id." });
-            Spheres.Remove(lifeSphere);
-            return Ok(lifeSphere);
+            bool result = lifeSphereRegister.DeleteLifeSphere(id, title);
+            if (result)
+                return StatusCode(204);
+            else
+                return Ok();
         }
 
         [HttpGet("{id}")]
         public ActionResult<bool> GetLifeSphereById(int id)
         {
-            var lifesphere = Spheres.FirstOrDefault(x => x.Id == id);
-            if (lifesphere != null) return StatusCode(204, new { ErrorMessage = "this item doen't exist or wrong id." });
-            return Ok(lifesphere);
+            var lifeSphere = lifeSphereRegister.GetLifeSphereById(id);
+            if (lifeSphere == null) return StatusCode(204);
+            return Ok(lifeSphere);
         }
     }
 }
