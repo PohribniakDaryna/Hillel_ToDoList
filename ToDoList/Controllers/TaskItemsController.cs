@@ -5,6 +5,7 @@ namespace ToDoList.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [LogFilter]
     public class TaskItemsController : ControllerBase
     {
         private readonly ITaskRegister taskRegister;
@@ -17,7 +18,7 @@ namespace ToDoList.Controllers
         public ActionResult<bool> GetTasks()
         {
             var tasks = taskRegister.GetTasks();
-            if (tasks.Count>0)
+            if (tasks.Count > 0)
                 return Ok(tasks);
             else
                 return StatusCode(204);
@@ -41,7 +42,7 @@ namespace ToDoList.Controllers
         public ActionResult<bool> UpdateTask(int id, [FromBody] CreateTaskItemRequest request)
         {
             var task = taskRegister.UpdateTask(id, request);
-            if (task!=null)
+            if (task != null)
                 return Ok(task);
             else
                 return StatusCode(204);

@@ -33,9 +33,22 @@ namespace ToDoList
 
             app.UseAuthorization();
 
+            app.Use(async (context, next) =>
+            {
+                try
+                {
+                    Console.WriteLine("Request '{0}' began at {1}", context.Request.Path, DateTime.Now);
+                    await next();
+                    Console.WriteLine("Request '{0}' finished", context.Request.Path);
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            });
 
             app.MapControllers();
-            app.MapGet("v2/TaskItems/{id}", 
+            app.MapGet("v2/TaskItems/{id}",
                 (HttpContext requestDelegate, int id) =>
                 {
                     var service = requestDelegate.RequestServices.GetService<ITaskRegister>()!;
