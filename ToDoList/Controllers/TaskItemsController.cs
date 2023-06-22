@@ -48,7 +48,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult<bool> DeleteTask(int id, [FromQuery] string title)
+        public ActionResult<bool> DeleteTask(int id, [FromRoute] string title)
         {
             bool result = taskRegister.DeleteTask(id, title);
             if (result)
@@ -58,7 +58,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<bool> GetTaskById(int id)
+        public ActionResult<bool> GetTaskById([FromRoute] int id)
         {
             var task = taskRegister.GetTaskById(id);
             if (task == null) return StatusCode(204);
