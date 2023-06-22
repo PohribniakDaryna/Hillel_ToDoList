@@ -35,6 +35,16 @@ namespace ToDoList
 
 
             app.MapControllers();
+            app.MapGet("v2/TaskItems/{id}", 
+                (HttpContext requestDelegate, int id) =>
+                {
+                    var service = requestDelegate.RequestServices.GetService<ITaskRegister>()!;
+                    var taskItem = service.GetTaskById(id);
+                    if (taskItem == null) return Results.NoContent();
+                    return Results.Ok(taskItem);
+                })
+             .WithName("Test")
+             .WithOpenApi();
 
             app.Run();
         }
