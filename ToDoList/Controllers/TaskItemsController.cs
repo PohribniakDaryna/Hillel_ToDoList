@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using ToDoList.Services;
 
 namespace ToDoList.Controllers
 {
@@ -8,60 +8,47 @@ namespace ToDoList.Controllers
     [LogFilter]
     public class TaskItemsController : ControllerBase
     {
-        private readonly ITaskRegister taskRegister;
-        public TaskItemsController(ITaskRegister taskregister)
+        private readonly ITaskService taskService;
+        public TaskItemsController(ITaskService taskService)
         {
-            this.taskRegister = taskregister;
+            this.taskService = taskService;
         }
 
         [HttpGet]
         public ActionResult<bool> GetTasks()
         {
-            var tasks = taskRegister.GetTasks();
-            if (tasks.Count > 0)
-                return Ok(tasks);
-            else
-                return StatusCode(204);
+            var tasks = taskService.GetTasks();
+            return tasks.Count>0 ? (ActionResult<bool>)Ok(tasks) : (ActionResult<bool>)StatusCode(204);
         }
 
         [HttpPost]
         public ActionResult<bool> AddTask([FromBody] CreateTaskItemRequest request)
         {
-            TaskItem task = new()
-            {
-                Id = taskRegister.GetTasks().Count,
-                Title = request.Title,
-                DeadLine = request.DeadLine,
-                Description = request.Description
-            };
-            taskRegister.AddTask(task);
-            return Ok(task);
+            if (request == null) return StatusCode(204);
+            taskService.AddTask(request);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult<bool> DeleteTask(int id)
+        {
+            bool result = taskService.DeleteTask(id);
+            if (result == false) return StatusCode(204);
+            return Ok();
         }
 
         [HttpPut]
         public ActionResult<bool> UpdateTask(int id, [FromBody] CreateTaskItemRequest request)
         {
-            var task = taskRegister.UpdateTask(id, request);
-            if (task != null)
-                return Ok(task);
-            else
-                return StatusCode(204);
-        }
-
-        [HttpDelete("{id}")]
-        public ActionResult<bool> DeleteTask(int id, [FromRoute] string title)
-        {
-            bool result = taskRegister.DeleteTask(id, title);
-            if (result)
-                return Ok();
-            else
-                return StatusCode(204);
+            var task = taskService.UpdateTask(id, request);
+            if (task == null) return StatusCode(204);
+            return Ok(task);
         }
 
         [HttpGet("{id}")]
         public ActionResult<bool> GetTaskById([FromRoute] int id)
         {
-            var task = taskRegister.GetTaskById(id);
+            var task = taskService.GetTaskById(id);
             if (task == null) return StatusCode(204);
             return Ok(task);
         }
