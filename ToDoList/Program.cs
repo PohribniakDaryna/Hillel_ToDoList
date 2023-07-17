@@ -13,20 +13,22 @@ namespace ToDoList
             // Add services to the container.
             builder.Services.AddDbContext<ApplicationContext>(options =>
             {
-                options.UseSqlite("Data Source=helloapp.db");
+                options.UseSqlServer("Server=.\\SQLExpress;Initial Catalog=TasksDataBase;Trusted_Connection=Yes;Integrated Security=true;TrustServerCertificate=True");
+                //options.UseSqlite("Data Source=helloapp.db");
             });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-          
+
             builder.Services.AddTransient<ITaskItem, TaskItem>();
             builder.Services.AddTransient<ITaskService, TaskService>();
-            builder.Services.AddScoped<ITaskRepository, DatabaseTaskRepository>();
+            builder.Services.AddScoped<ITaskRepository, DBTaskRepository>();
 
-            builder.Services.AddSingleton<ILifeSphereRegister, LifeSphereRegister>();
-            builder.Services.AddSingleton<ILifeSphere, LifeSphere>();
+            builder.Services.AddTransient<ILifeSphere, LifeSphere>();
+            builder.Services.AddTransient<ILifeSphereService, LifeSphereService>();
+            builder.Services.AddScoped<ILifeSphereRepository, DBLifeSphereRepository>();
 
             var app = builder.Build();
 

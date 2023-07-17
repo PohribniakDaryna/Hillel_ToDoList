@@ -2,10 +2,10 @@
 
 namespace ToDoList.Services
 {
-    public class DatabaseTaskRepository : ITaskRepository
+    public class DBTaskRepository : ITaskRepository
     {
         public ApplicationContext DbContext { get; }
-        public DatabaseTaskRepository(ApplicationContext dbContext)
+        public DBTaskRepository(ApplicationContext dbContext)
         {
             DbContext = dbContext;
         }
@@ -15,9 +15,9 @@ namespace ToDoList.Services
             return DbContext.Tasks.FirstOrDefault(x => x.Id == taskId);
         }
 
-        public void AddTask(ITaskItem taskItem)
+        public void AddTask(TaskItem taskItem)
         {
-            DbContext.Tasks.Add((TaskItem)taskItem);
+            DbContext.Tasks.Add(taskItem);
             DbContext.SaveChanges();
         }
 
@@ -29,13 +29,12 @@ namespace ToDoList.Services
             return task;
         }
 
-        public bool UpdateTask(int id, TaskItem taskItem)
+        public bool UpdateTask(int id, TaskItem newTaskItem)
         {
-            var tasks = DbContext.Tasks.ToList();
-            var task = DbContext.Tasks.FirstOrDefault(x => x.Id == id);
-            if (task == null) return false;
-            int index = tasks.IndexOf(task);
-            tasks[index] = taskItem;
+            var taskItem = DbContext.Tasks.FirstOrDefault(x => x.Id == id);
+            if (taskItem == null) return false;
+            taskItem = newTaskItem;
+            DbContext.SaveChanges();
             return true;
         }
 
