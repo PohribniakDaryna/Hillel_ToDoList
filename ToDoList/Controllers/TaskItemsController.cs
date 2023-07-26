@@ -5,7 +5,6 @@ namespace ToDoList.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [LogFilter]
     public class TaskItemsController : ControllerBase
     {
         private readonly ITaskService taskService;

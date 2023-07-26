@@ -4,14 +4,19 @@ namespace ToDoList
 {
     public class LogFilter : Attribute, IActionFilter
     {
+        public LogFilter(ILogger<LogFilter> logger ) 
+        { 
+            Logger= logger;
+        }
+        public ILogger<LogFilter> Logger { get;}
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            Console.WriteLine($"Request finished.");
+            Logger.LogInformation($"Request finished.");
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
-            Console.WriteLine($"Request began at {DateTime.Now}.");
+            Logger.LogInformation($"Request began at {DateTime.Now}.");
         }
     }
 }
