@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
 using ToDoList.Services;
 
 namespace ToDoList.Controllers
@@ -8,62 +7,48 @@ namespace ToDoList.Controllers
     [ApiController]
     public class LifeSpheresController : ControllerBase
     {
-        private readonly ILifeSphereRegister lifeSphereRegister;
+        private readonly ILifeSphereService lifeSphereService;
 
-        public LifeSpheresController(ILifeSphereRegister lifeSphereRegister)
+        public LifeSpheresController(ILifeSphereService lifeSphereService)
         {
-            this.lifeSphereRegister = lifeSphereRegister;
+            this.lifeSphereService = lifeSphereService;
         }
 
         [HttpGet]
         public ActionResult<bool> GetLifeSpheres()
         {
-            var lifeSpheres = lifeSphereRegister.GetLifeSpheres();
-            if (lifeSpheres.Count > 0)
-                return Ok(lifeSpheres);
-            else
-                return StatusCode(204);
+            var lifeSpheres = lifeSphereService.GetLifeSpheres();
+            return lifeSpheres.Count > 0 ? (ActionResult<bool>)Ok(lifeSpheres) : (ActionResult<bool>)StatusCode(204);
         }
 
         [HttpPost]
         public ActionResult<bool> AddLifeSphere([FromBody] CreateLifeSphereRequest request)
         {
-            LifeSphere lifeSphere = new()
-            {
-                Id = lifeSphereRegister.GetLifeSpheres().Count,
-                Title = request.Title,
-                Grade = request.Grade,
-                Description = request.Description
-            };
-            lifeSphereRegister.AddLifeSphere(lifeSphere);
-            return Ok(lifeSphere);
+            if (request == null) return StatusCode(204);
+            lifeSphereService.AddLifeSphere(request);
+            return Ok();
         }
 
+        [HttpDelete("{id}")]
+        public ActionResult<bool> DeleteLifeSphere(int id)
+        {
+            bool result = lifeSphereService.DeleteLifeSphere(id);
+            if (result == false) return StatusCode(204);
+            return Ok();
+        }
 
         [HttpPut]
         public ActionResult<bool> UpdateLifeSphere(int id, [FromBody] CreateLifeSphereRequest request)
         {
-            var lifeSphere = lifeSphereRegister.UpdateLifeSphere(id, request);
-            if (lifeSphere != null)
-                return Ok();
-            else
-                return StatusCode(204);
-        }
-
-        [HttpDelete("{id}")]
-        public ActionResult<bool> DeleteLifeSphere(int id, [FromQuery] string title)
-        {
-            bool result = lifeSphereRegister.DeleteLifeSphere(id, title);
-            if (result)
-                return StatusCode(204);
-            else
-                return Ok();
+            var lifeSphere = lifeSphereService.UpdateLifeSphere(id, request);
+            if (lifeSphere == null) return StatusCode(204);
+            return Ok(lifeSphere);
         }
 
         [HttpGet("{id}")]
         public ActionResult<bool> GetLifeSphereById(int id)
         {
-            var lifeSphere = lifeSphereRegister.GetLifeSphereById(id);
+            var lifeSphere = lifeSphereService.GetLifeSphereById(id);
             if (lifeSphere == null) return StatusCode(204);
             return Ok(lifeSphere);
         }

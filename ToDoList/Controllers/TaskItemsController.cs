@@ -5,7 +5,6 @@ namespace ToDoList.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [LogFilter]
     public class TaskItemsController : ControllerBase
     {
         private readonly ITaskService taskService;
@@ -18,7 +17,7 @@ namespace ToDoList.Controllers
         public ActionResult<bool> GetTasks()
         {
             var tasks = taskService.GetTasks();
-            return tasks.Count>0 ? (ActionResult<bool>)Ok(tasks) : (ActionResult<bool>)StatusCode(204);
+            return tasks.Count > 0 ? (ActionResult<bool>)Ok(tasks) : (ActionResult<bool>)StatusCode(204);
         }
 
         [HttpPost]
