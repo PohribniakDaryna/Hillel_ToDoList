@@ -1,0 +1,1317 @@
+2023-08-01 16:31:08.285 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:31:08.556 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 16:31:08.559 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:31:08.560 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:31:08.562 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 16:31:09.630 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 16:31:10.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 533.0320ms
+2023-08-01 16:31:10.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 16:31:10.188 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:31:10.201 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.7882ms
+2023-08-01 16:31:10.429 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 245.0915ms
+2023-08-01 16:31:10.599 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 16:31:10.755 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.5355ms
+2023-08-01 16:31:20.881 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111
+2023-08-01 16:31:20.887 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 16:31:20.992 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 16:31:20.997 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 16:31:20.999 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111 - 401 0 - 118.2474ms
+2023-08-01 16:37:05.470 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 44
+2023-08-01 16:37:05.482 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 16:37:05.497 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 16:37:05.686 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 16:37:05.691 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 187.1715ms
+2023-08-01 16:37:05.694 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 16:37:05.697 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 44 - 200 - text/plain;+charset=utf-8 227.1979ms
+2023-08-01 16:44:02.665 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:44:02.858 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 16:44:02.861 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:44:02.862 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:44:02.863 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 16:44:04.050 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 16:44:04.458 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 410.0669ms
+2023-08-01 16:44:04.478 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 16:44:04.480 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:44:04.491 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 10.9500ms
+2023-08-01 16:44:04.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6204ms
+2023-08-01 16:44:04.641 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 16:44:04.791 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 150.5900ms
+2023-08-01 16:45:13.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 16:45:13.556 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 16:45:13.633 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 16:45:13.645 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 16:45:14.801 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 16:45:14.842 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 16:45:15.032 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 16:45:15.093 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 16:45:15.109 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1458.9747ms
+2023-08-01 16:45:15.111 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 16:45:15.123 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1571.7018ms
+2023-08-01 16:48:15.221 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:48:15.390 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 16:48:15.394 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:48:15.395 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:48:15.397 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 16:48:17.418 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 16:48:17.869 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 454.8321ms
+2023-08-01 16:48:17.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 16:48:17.889 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:48:17.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 15.7104ms
+2023-08-01 16:48:17.958 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.1497ms
+2023-08-01 16:48:18.098 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 16:48:18.361 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 262.8525ms
+2023-08-01 16:49:21.762 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:49:22.021 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 16:49:22.025 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:49:22.027 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:49:22.028 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 16:49:23.127 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 16:49:23.601 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 477.4887ms
+2023-08-01 16:49:23.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 16:49:23.617 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:49:23.628 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.1091ms
+2023-08-01 16:49:23.676 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.0825ms
+2023-08-01 16:49:23.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 16:49:23.992 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.0638ms
+2023-08-01 16:55:46.006 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 16:55:46.203 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 16:55:46.205 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 16:55:46.206 +03:00 [INF] Hosting environment: Development
+2023-08-01 16:55:46.207 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 16:55:46.699 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 16:55:46.961 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 264.3303ms
+2023-08-01 16:55:46.974 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 16:55:46.976 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 16:55:46.986 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 9.2486ms
+2023-08-01 16:55:47.021 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.9318ms
+2023-08-01 16:55:47.099 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 16:55:47.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 125.4755ms
+2023-08-01 16:55:55.789 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 44
+2023-08-01 16:55:55.795 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 16:55:55.869 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 16:55:55.883 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 16:55:56.027 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 16:55:56.033 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 144.702ms
+2023-08-01 16:55:56.036 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 16:55:56.037 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 44 - 200 - text/plain;+charset=utf-8 248.4463ms
+2023-08-01 17:52:08.250 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 17:52:08.470 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 17:52:08.473 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 17:52:08.474 +03:00 [INF] Hosting environment: Development
+2023-08-01 17:52:08.476 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 17:52:09.348 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 17:52:09.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 278.6609ms
+2023-08-01 17:52:09.651 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 17:52:09.660 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 17:52:09.670 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 9.8270ms
+2023-08-01 17:52:09.719 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.5879ms
+2023-08-01 17:52:09.834 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 17:52:09.967 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.8173ms
+2023-08-01 17:52:19.768 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 44
+2023-08-01 17:52:19.783 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 17:52:19.871 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:52:19.888 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:52:20.042 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:52:20.047 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 154.6563ms
+2023-08-01 17:52:20.050 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:52:20.051 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 44 - 200 - text/plain;+charset=utf-8 282.8554ms
+2023-08-01 17:52:37.651 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 17:52:37.695 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:52:37.746 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:52:37.749 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 17:52:37.752 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 17:52:38.945 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 17:52:38.985 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 17:52:39.181 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 17:52:39.237 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 17:52:39.249 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1493.8436ms
+2023-08-01 17:52:39.251 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 17:52:39.262 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1610.9204ms
+2023-08-01 17:52:54.208 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-01 17:52:54.214 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:52:54.237 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:52:54.250 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:52:54.259 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:52:54.260 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 401 0 - 52.5023ms
+2023-08-01 17:53:34.218 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 17:53:34.463 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 17:53:34.467 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 17:53:34.469 +03:00 [INF] Hosting environment: Development
+2023-08-01 17:53:34.470 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 17:53:35.006 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 17:53:35.379 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 375.6972ms
+2023-08-01 17:53:35.400 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 17:53:35.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 17:53:35.420 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 20.0446ms
+2023-08-01 17:53:35.477 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.4857ms
+2023-08-01 17:53:35.561 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 17:53:35.705 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.2048ms
+2023-08-01 17:53:42.061 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 17:53:42.067 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 17:53:42.145 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:53:42.162 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:53:42.321 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:53:42.327 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 159.0013ms
+2023-08-01 17:53:42.331 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:53:42.333 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 272.1910ms
+2023-08-01 17:54:03.476 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:54:03.542 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:54:03.587 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:54:03.598 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:54:03.607 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:54:03.609 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 132.3895ms
+2023-08-01 17:54:26.709 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:54:26.712 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 17:54:26.715 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:54:26.718 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:54:26.719 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 10.2164ms
+2023-08-01 17:54:29.403 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:54:29.404 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 17:54:29.411 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:54:29.414 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:54:29.415 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 11.8109ms
+2023-08-01 17:54:36.149 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 17:54:36.150 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 17:54:36.153 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:54:36.156 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:54:36.163 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:54:36.165 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 4.2212ms
+2023-08-01 17:54:36.166 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:54:36.169 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 19.8798ms
+2023-08-01 17:54:47.292 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 17:54:47.293 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 17:54:47.297 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:54:47.299 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:54:47.304 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:54:47.306 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 1.873ms
+2023-08-01 17:54:47.308 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:54:47.311 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 18.8380ms
+2023-08-01 17:55:38.577 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:55:38.590 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 17:55:38.595 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:55:38.597 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:55:38.599 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 21.8056ms
+2023-08-01 17:56:01.796 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 17:56:01.989 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 17:56:01.992 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 17:56:01.993 +03:00 [INF] Hosting environment: Development
+2023-08-01 17:56:01.994 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 17:56:02.789 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 17:56:03.066 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 278.8462ms
+2023-08-01 17:56:03.083 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 17:56:03.085 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 17:56:03.091 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.5115ms
+2023-08-01 17:56:03.147 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.2485ms
+2023-08-01 17:56:03.227 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 17:56:03.362 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.4445ms
+2023-08-01 17:56:08.616 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 17:56:08.622 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 17:56:08.698 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:56:08.712 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:56:08.871 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:56:08.877 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 158.941ms
+2023-08-01 17:56:08.882 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:56:08.883 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 267.5814ms
+2023-08-01 17:56:37.061 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:56:37.105 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:56:37.143 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:56:37.151 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:56:37.157 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:56:37.158 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 97.9913ms
+2023-08-01 17:56:53.316 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:56:53.321 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:56:53.323 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:56:53.325 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 8.8332ms
+2023-08-01 17:58:07.025 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 17:58:07.271 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 17:58:07.275 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 17:58:07.276 +03:00 [INF] Hosting environment: Development
+2023-08-01 17:58:07.278 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 17:58:08.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 17:58:08.542 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 360.1566ms
+2023-08-01 17:58:08.558 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 17:58:08.561 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 17:58:08.576 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 14.1875ms
+2023-08-01 17:58:08.620 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.6985ms
+2023-08-01 17:58:08.697 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 17:58:08.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.3749ms
+2023-08-01 17:58:27.838 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 17:58:27.848 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 17:58:27.942 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:58:27.958 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 17:58:28.108 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 17:58:28.114 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 151.4011ms
+2023-08-01 17:58:28.117 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 17:58:28.118 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 279.9479ms
+2023-08-01 17:58:48.434 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 17:58:48.451 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:58:48.459 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:58:48.460 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 26.2910ms
+2023-08-01 17:58:56.022 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111
+2023-08-01 17:58:56.027 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:58:56.030 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:58:56.031 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111 - 401 0 - 8.9911ms
+2023-08-01 17:59:16.783 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111
+2023-08-01 17:59:16.825 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:59:16.865 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:59:16.868 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2023-08-01 17:59:16.872 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 17:59:16.873 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111 - 401 0 - 90.4805ms
+2023-08-01 17:59:24.940 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 17:59:24.941 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 17:59:24.959 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 17:59:24.962 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 17:59:24.966 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 17:59:25.969 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 17:59:26.013 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 17:59:26.190 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 17:59:26.247 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 17:59:26.259 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1289.7258ms
+2023-08-01 17:59:26.260 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 17:59:26.270 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1330.2167ms
+2023-08-01 18:00:10.026 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:00:10.243 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:00:10.247 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:00:10.249 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:00:10.250 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:00:11.075 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:00:11.354 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 281.4864ms
+2023-08-01 18:00:11.373 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:00:11.376 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:00:11.391 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 14.0769ms
+2023-08-01 18:00:11.437 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.1123ms
+2023-08-01 18:00:11.520 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:00:11.649 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 129.4536ms
+2023-08-01 18:00:25.518 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:00:25.730 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:00:25.734 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:00:25.736 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:00:25.738 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:00:26.516 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:00:26.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 278.0326ms
+2023-08-01 18:00:26.814 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:00:26.816 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:00:26.826 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.4330ms
+2023-08-01 18:00:26.872 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.2956ms
+2023-08-01 18:00:26.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:00:27.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.5710ms
+2023-08-01 18:00:31.178 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:00:31.186 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:00:31.268 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:00:31.284 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:00:31.440 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:00:31.445 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 155.8367ms
+2023-08-01 18:00:31.449 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:00:31.450 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 271.5228ms
+2023-08-01 18:00:44.176 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:00:44.216 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:00:44.255 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 18:00:44.257 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:00:44.263 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:00:45.231 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:00:45.276 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:00:45.455 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:00:45.519 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:00:45.531 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1264.4105ms
+2023-08-01 18:00:45.532 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:00:45.543 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1366.7906ms
+2023-08-01 18:00:53.021 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:00:53.026 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidAudienceException: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateAudience(IEnumerable`1 audiences, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateAudience(IEnumerable`1 audiences, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:00:53.044 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10208: Unable to validate audience. validationParameters.ValidAudience is null or whitespace and validationParameters.ValidAudiences is null.
+2023-08-01 18:00:53.051 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:00:53.058 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:00:53.059 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 37.7582ms
+2023-08-01 18:02:00.360 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:02:00.550 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:02:00.554 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:02:00.556 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:02:00.557 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:02:01.358 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:02:01.672 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 315.4566ms
+2023-08-01 18:02:01.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:02:01.691 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:02:01.703 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.3951ms
+2023-08-01 18:02:01.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.2780ms
+2023-08-01 18:02:01.838 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:02:01.975 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.9571ms
+2023-08-01 18:02:09.535 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:02:09.542 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:02:09.621 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:02:09.638 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:02:09.788 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:02:09.793 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 149.5135ms
+2023-08-01 18:02:09.796 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:02:09.797 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 261.8718ms
+2023-08-01 18:02:23.367 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:02:23.406 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:02:23.447 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:02:23.450 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:02:23.454 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:02:24.397 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:02:24.441 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:02:24.634 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:02:24.690 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:02:24.703 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1245.2687ms
+2023-08-01 18:02:24.704 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:02:24.714 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1346.6610ms
+2023-08-01 18:02:38.742 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-01 18:02:38.748 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:02:38.769 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:02:38.776 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:02:38.783 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:02:38.784 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 401 0 - 42.1899ms
+2023-08-01 18:03:24.140 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-01 18:03:24.142 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 18:03:24.145 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:03:24.148 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:03:24.150 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 401 0 - 9.5780ms
+2023-08-01 18:03:27.162 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-01 18:03:27.163 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 18:03:27.166 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:03:27.168 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:03:27.170 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 401 0 - 8.1533ms
+2023-08-01 18:03:31.159 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-01 18:03:31.160 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 18:03:31.162 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:03:31.165 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:03:31.167 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 401 0 - 7.7874ms
+2023-08-01 18:03:31.770 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-01 18:03:31.771 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 18:03:31.773 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:03:31.776 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:03:31.778 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 401 0 - 8.5327ms
+2023-08-01 18:05:19.364 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:05:19.569 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:05:19.572 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:05:19.573 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:05:19.574 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:05:19.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:05:20.346 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 352.4894ms
+2023-08-01 18:05:20.365 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:05:20.367 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:05:20.383 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 16.2399ms
+2023-08-01 18:05:20.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.3540ms
+2023-08-01 18:05:20.518 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:05:20.641 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.7100ms
+2023-08-01 18:05:25.218 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:05:25.231 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:05:25.308 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:05:25.324 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:05:25.477 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:05:25.482 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 153.6364ms
+2023-08-01 18:05:25.485 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:05:25.486 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 268.2209ms
+2023-08-01 18:05:43.012 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:05:43.058 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:05:43.091 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:05:43.098 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:05:43.105 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:05:43.107 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 94.6694ms
+2023-08-01 18:08:55.530 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:08:55.741 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:08:55.743 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:08:55.744 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:08:55.746 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:08:56.159 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:08:56.495 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 339.1116ms
+2023-08-01 18:08:56.512 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:08:56.514 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:08:56.529 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 14.7318ms
+2023-08-01 18:08:56.576 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.9412ms
+2023-08-01 18:08:56.659 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:08:56.803 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 144.4244ms
+2023-08-01 18:09:02.003 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:09:02.010 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:09:07.737 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:09:07.753 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:09:10.223 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:09:10.229 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 2470.9245ms
+2023-08-01 18:09:10.232 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:09:12.157 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 10154.2593ms
+2023-08-01 18:09:16.976 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:09:21.507 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:09:21.508 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:09:21.516 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:09:21.517 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 3.6462ms
+2023-08-01 18:09:21.519 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:09:22.348 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 5372.4453ms
+2023-08-01 18:09:38.318 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:09:38.358 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:09:38.398 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:09:38.404 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:09:38.411 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:09:38.412 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 94.0559ms
+2023-08-01 18:12:00.248 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:12:00.443 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:12:00.446 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:12:00.447 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:12:00.448 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:12:01.288 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:12:01.593 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 307.2310ms
+2023-08-01 18:12:01.611 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:12:01.614 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:12:01.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.4472ms
+2023-08-01 18:12:01.673 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.3286ms
+2023-08-01 18:12:01.766 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:12:01.912 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.4806ms
+2023-08-01 18:12:08.444 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:12:08.451 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:12:08.530 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:12:08.546 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:12:08.699 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:12:08.704 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 153.0906ms
+2023-08-01 18:12:08.707 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:12:08.708 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 264.4314ms
+2023-08-01 18:12:22.760 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:12:22.805 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:12:22.844 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:12:22.850 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:12:22.858 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:12:22.859 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 99.7112ms
+2023-08-01 18:13:33.623 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:13:33.813 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:13:33.816 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:13:33.818 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:13:33.819 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:13:34.613 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:13:34.898 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 286.3617ms
+2023-08-01 18:13:34.918 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:13:34.919 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:13:34.927 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.5663ms
+2023-08-01 18:13:34.985 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.7512ms
+2023-08-01 18:13:35.077 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:13:35.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.3629ms
+2023-08-01 18:13:40.151 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:13:40.159 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:13:40.239 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:13:40.255 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:13:40.424 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:13:40.430 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 169.9308ms
+2023-08-01 18:13:40.433 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:13:40.434 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 282.9981ms
+2023-08-01 18:13:53.507 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:13:53.546 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:13:53.586 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:13:53.594 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:13:53.600 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:13:53.602 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 94.8357ms
+2023-08-01 18:22:26.630 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:22:26.800 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:22:26.803 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:22:26.804 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:22:26.805 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:22:27.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:22:27.922 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 285.9173ms
+2023-08-01 18:22:27.942 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:22:27.943 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:22:27.950 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.5279ms
+2023-08-01 18:22:28.004 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.0750ms
+2023-08-01 18:22:28.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:22:28.228 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.1994ms
+2023-08-01 18:22:33.571 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:22:33.577 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:22:33.655 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:22:33.670 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:22:33.833 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:22:33.839 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 162.7147ms
+2023-08-01 18:22:33.843 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:22:33.845 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 274.0288ms
+2023-08-01 18:22:58.387 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJuYmYiOjE2OTA5MDMzNTMsImV4cCI6MTY5MTUwODE1MywiaWF0IjoxNjkwOTAzMzUzLCJpc3MiOiJodHRwczovL3Rlc3QuY29tIiwiYXVkIjoiaHR0cHM6Ly90ZXN0LmNvbSJ9.27ulbFWqItqQPALxKRqjOLik9nS9aXP5QDbciEfz0gY - -
+2023-08-01 18:22:58.432 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:22:58.470 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:22:58.473 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.VerifyToken (ToDoList)'
+2023-08-01 18:22:58.478 +03:00 [INF] Route matched with {action = "VerifyToken", controller = "Login"}. Executing controller action with signature Boolean VerifyToken(System.String) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:22:58.492 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2023-08-01 18:22:58.495 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.VerifyToken (ToDoList) in 14.8462ms
+2023-08-01 18:22:58.496 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.VerifyToken (ToDoList)'
+2023-08-01 18:22:58.499 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJzdHJpbmciLCJuYmYiOjE2OTA5MDMzNTMsImV4cCI6MTY5MTUwODE1MywiaWF0IjoxNjkwOTAzMzUzLCJpc3MiOiJodHRwczovL3Rlc3QuY29tIiwiYXVkIjoiaHR0cHM6Ly90ZXN0LmNvbSJ9.27ulbFWqItqQPALxKRqjOLik9nS9aXP5QDbciEfz0gY - - - 200 - application/json;+charset=utf-8 111.3240ms
+2023-08-01 18:23:09.815 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:23:09.826 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:23:09.850 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:23:09.859 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:23:09.865 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:23:09.867 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 52.3066ms
+2023-08-01 18:23:37.073 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:23:37.075 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2023-08-01 18:23:37.079 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:23:37.087 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:23:37.089 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 15.2858ms
+2023-08-01 18:24:18.020 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:24:18.237 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:24:18.241 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:24:18.243 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:24:18.244 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:24:18.760 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:24:19.080 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 324.3981ms
+2023-08-01 18:24:19.097 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:24:19.100 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:24:19.111 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 10.5973ms
+2023-08-01 18:24:19.161 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.0056ms
+2023-08-01 18:24:19.254 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:24:19.401 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 146.8631ms
+2023-08-01 18:24:24.194 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:24:24.201 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:24:24.283 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:24:24.299 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:24:24.454 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:24:24.460 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 155.9275ms
+2023-08-01 18:24:24.463 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:24:24.464 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 270.4103ms
+2023-08-01 18:24:49.739 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:24:49.781 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:24:49.822 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:24:49.829 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:24:49.836 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:24:49.837 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 98.4434ms
+2023-08-01 18:25:07.369 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:25:07.602 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:25:07.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:25:07.606 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:25:07.607 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:25:08.426 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:25:08.720 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 295.9965ms
+2023-08-01 18:25:08.739 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:25:08.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:25:08.758 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 16.8202ms
+2023-08-01 18:25:08.804 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.7962ms
+2023-08-01 18:25:08.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:25:09.055 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.0106ms
+2023-08-01 18:25:18.360 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:25:18.367 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:25:18.449 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:25:18.465 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:25:18.626 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:25:18.632 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 161.5129ms
+2023-08-01 18:25:18.635 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:25:18.636 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 276.5088ms
+2023-08-01 18:25:47.228 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:25:47.432 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:25:47.436 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:25:47.437 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:25:47.438 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:25:48.286 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:25:48.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 371.0070ms
+2023-08-01 18:25:48.675 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:25:48.677 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:25:48.692 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.9270ms
+2023-08-01 18:25:48.754 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.2994ms
+2023-08-01 18:25:48.846 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:25:49.002 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.5734ms
+2023-08-01 18:25:55.824 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:25:55.833 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:25:55.917 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:25:55.934 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:25:56.090 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:25:56.096 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 157.3722ms
+2023-08-01 18:25:56.100 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:25:56.102 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 277.6228ms
+2023-08-01 18:26:12.364 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:26:12.406 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuer(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateIssuer(String issuer, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-08-01 18:26:12.444 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10204: Unable to validate issuer. validationParameters.ValidIssuer is null or whitespace AND validationParameters.ValidIssuers is null or empty.
+2023-08-01 18:26:12.451 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-01 18:26:12.458 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:26:12.459 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 95.1119ms
+2023-08-01 18:27:41.709 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:27:41.936 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:27:41.939 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:27:41.940 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:27:41.941 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:27:42.800 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:27:43.070 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 271.6072ms
+2023-08-01 18:27:43.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:27:43.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:27:43.096 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.5790ms
+2023-08-01 18:27:43.155 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.1698ms
+2023-08-01 18:27:43.249 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:27:43.384 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 135.2460ms
+2023-08-01 18:27:47.894 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:27:47.901 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:28:48.074 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:28:48.325 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:28:48.328 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:28:48.330 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:28:48.331 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:28:48.803 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:28:49.186 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 385.8988ms
+2023-08-01 18:28:49.208 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:28:49.211 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:28:49.220 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 9.3383ms
+2023-08-01 18:28:49.275 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.5497ms
+2023-08-01 18:28:49.367 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:28:49.502 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 134.3321ms
+2023-08-01 18:28:55.154 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:28:55.169 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:28:55.244 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:28:55.260 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:28:55.411 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:28:55.416 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 151.4624ms
+2023-08-01 18:28:55.420 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:28:55.421 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 267.1632ms
+2023-08-01 18:29:09.492 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:29:09.561 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-01 18:29:09.566 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:29:11.236 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:29:11.345 +03:00 [INF] Executed DbCommand (91ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:29:11.658 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-01 18:29:11.872 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([DeadLine], [Description], [LifeSphereId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-08-01 18:29:11.896 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-01 18:29:11.898 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2327.564ms
+2023-08-01 18:29:11.899 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-01 18:29:11.913 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 200 0 - 2420.1457ms
+2023-08-01 18:29:20.746 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:29:20.751 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:29:20.755 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:29:20.772 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:29:20.777 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:29:20.792 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:29:20.799 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:29:20.807 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 47.1901ms
+2023-08-01 18:29:20.808 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:29:20.812 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 66.0164ms
+2023-08-01 18:50:56.524 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:50:56.737 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:50:56.741 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:50:56.742 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:50:56.744 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:50:57.571 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:50:57.860 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 292.2829ms
+2023-08-01 18:50:57.876 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:50:57.879 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:50:57.889 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 10.1471ms
+2023-08-01 18:50:57.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.3478ms
+2023-08-01 18:50:58.024 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:50:58.168 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 143.3630ms
+2023-08-01 18:51:09.819 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:51:09.826 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:51:09.905 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:51:09.920 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:51:10.073 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:51:10.079 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 153.9318ms
+2023-08-01 18:51:10.082 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:51:10.083 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 263.7593ms
+2023-08-01 18:51:36.627 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:51:36.638 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:51:36.641 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:51:37.599 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:51:37.639 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:51:37.843 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:51:37.903 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:51:37.916 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1271.355ms
+2023-08-01 18:51:37.918 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:51:37.928 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1300.9722ms
+2023-08-01 18:51:47.978 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:51:47.992 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-01 18:51:48.001 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:51:48.002 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 23.2768ms
+2023-08-01 18:51:58.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:51:58.517 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:51:58.519 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:51:58.536 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:51:58.540 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:51:58.548 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:51:58.551 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:51:58.554 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 30.8924ms
+2023-08-01 18:51:58.556 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:51:58.558 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 86.0652ms
+2023-08-01 18:52:08.961 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-01 18:52:08.965 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-01 18:52:08.970 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-08-01 18:52:08.971 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 403 0 - 9.8460ms
+2023-08-01 18:52:13.659 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-01 18:52:13.662 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-01 18:52:13.665 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-08-01 18:52:13.666 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 403 0 - 7.1676ms
+2023-08-01 18:52:31.266 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-01 18:52:31.268 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-01 18:52:31.270 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2023-08-01 18:52:31.273 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 403 0 - 6.1418ms
+2023-08-01 18:54:20.636 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-01 18:54:20.803 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-01 18:54:20.806 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-01 18:54:20.807 +03:00 [INF] Hosting environment: Development
+2023-08-01 18:54:20.808 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-01 18:54:21.268 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-01 18:54:21.574 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 306.6862ms
+2023-08-01 18:54:21.593 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-01 18:54:21.595 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-01 18:54:21.607 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.3600ms
+2023-08-01 18:54:21.669 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.7986ms
+2023-08-01 18:54:21.842 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-01 18:54:22.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 161.1260ms
+2023-08-01 18:54:30.299 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-01 18:54:30.305 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-01 18:54:30.386 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:54:30.403 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-01 18:54:30.566 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-01 18:54:30.572 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 162.8304ms
+2023-08-01 18:54:30.577 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-01 18:54:30.579 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 279.8185ms
+2023-08-01 18:54:43.793 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:54:43.845 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-01 18:54:43.849 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:54:44.839 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:54:44.878 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:54:45.207 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-01 18:54:45.416 +03:00 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([DeadLine], [Description], [LifeSphereId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-08-01 18:54:45.440 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-01 18:54:45.442 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1589.2635ms
+2023-08-01 18:54:45.443 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-01 18:54:45.454 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 200 0 - 1660.2399ms
+2023-08-01 18:54:56.593 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:54:56.599 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:54:56.603 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:54:56.619 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:54:56.624 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:54:56.635 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:54:56.642 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:54:56.650 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 43.0414ms
+2023-08-01 18:54:56.652 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:54:56.656 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 62.2909ms
+2023-08-01 18:55:19.149 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113
+2023-08-01 18:55:19.154 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-01 18:55:19.161 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-01 18:55:19.163 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 113 - 401 0 - 13.3193ms
+2023-08-01 18:55:35.015 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:55:35.017 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:55:35.020 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:55:35.087 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:55:35.091 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:55:35.097 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:55:35.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:55:35.104 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 79.0764ms
+2023-08-01 18:55:35.106 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:55:35.109 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 93.4874ms
+2023-08-01 18:55:56.125 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/TaskItems/2 - -
+2023-08-01 18:55:56.131 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.DeleteTask (ToDoList)'
+2023-08-01 18:55:56.137 +03:00 [INF] Route matched with {action = "DeleteTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] DeleteTask(Int32) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:55:56.142 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:55:56.157 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:55:56.165 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:55:56.186 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0
+2023-08-01 18:55:56.197 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__id_0
+2023-08-01 18:55:56.214 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2023-08-01 18:55:56.220 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:55:56.225 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-01 18:55:56.227 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.DeleteTask (ToDoList) in 85.8976ms
+2023-08-01 18:55:56.229 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.DeleteTask (ToDoList)'
+2023-08-01 18:55:56.232 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/TaskItems/2 - - - 200 0 - 106.8248ms
+2023-08-01 18:56:04.237 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-01 18:56:04.240 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:56:04.242 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:56:04.248 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:56:04.253 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:56:04.258 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-01 18:56:04.262 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-01 18:56:04.265 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 18.1203ms
+2023-08-01 18:56:04.267 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-01 18:56:04.271 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 33.3179ms
+2023-08-01 18:56:21.165 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems/2 - -
+2023-08-01 18:56:21.168 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTaskById (ToDoList)'
+2023-08-01 18:56:21.172 +03:00 [INF] Route matched with {action = "GetTaskById", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTaskById(Int32) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-01 18:56:21.178 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-01 18:56:21.182 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-01 18:56:21.190 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__taskId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0
+2023-08-01 18:56:21.196 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2023-08-01 18:56:21.197 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTaskById (ToDoList) in 20.3789ms
+2023-08-01 18:56:21.199 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTaskById (ToDoList)'
+2023-08-01 18:56:21.201 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems/2 - - - 204 - - 35.7907ms

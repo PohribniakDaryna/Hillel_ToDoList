@@ -33,6 +33,7 @@ namespace ToDoList.Controllers
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.NameIdentifier, request.Login),
+                    new Claim(ClaimTypes.Role, "User")
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 Issuer = myIssuer,
@@ -48,10 +49,6 @@ namespace ToDoList.Controllers
         public bool VerifyToken(string token)
         {
             var mySecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret));
-
-            var myIssuer = "http://mysite.com";
-            var myAudience = "http://myaudience.com";
-
             var tokenHandler = new JwtSecurityTokenHandler();
             try
             {

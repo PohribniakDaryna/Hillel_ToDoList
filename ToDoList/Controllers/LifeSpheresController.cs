@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using ToDoList.Services;
 
 namespace ToDoList.Controllers
@@ -22,6 +24,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "User")]
         public ActionResult<bool> AddLifeSphere([FromBody] CreateLifeSphereRequest request)
         {
             if (request == null) return StatusCode(204);
@@ -30,6 +33,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public ActionResult<bool> DeleteLifeSphere(int id)
         {
             bool result = lifeSphereService.DeleteLifeSphere(id);
@@ -38,6 +42,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public ActionResult<bool> UpdateLifeSphere(int id, [FromBody] CreateLifeSphereRequest request)
         {
             var lifeSphere = lifeSphereService.UpdateLifeSphere(id, request);
