@@ -100,6 +100,9 @@ namespace ToDoList
             builder.Services.AddTransient<ILifeSphereService, LifeSphereService>();
             builder.Services.AddScoped<ILifeSphereRepository, DBLifeSphereRepository>();
 
+            builder.Services.AddTransient<ITaskValidator, TaskValidator>();
+            builder.Services.AddTransient<IUserValidator, UserValidator>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

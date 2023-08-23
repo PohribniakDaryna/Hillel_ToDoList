@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,34 +16,50 @@ namespace ToDoList.Controllers
         private readonly string secret;
         private readonly string myIssuer;
         private readonly string myAudience;
-        public LoginController(IConfiguration configuration)
+        private readonly IUserValidator validator;
+        private readonly ILogger<LoginController> logger;
+        public LoginController(
+            IConfiguration configuration, 
+            IUserValidator validator, 
+            ILogger<LoginController> logger)
         {
+            this.validator = validator;
+            this.logger = logger;
             secret = configuration.GetValue<string>("Auth:Secret")!;
             myIssuer = configuration.GetValue<string>("Auth:myIssuer")!;
             myAudience = configuration.GetValue<string>("Auth:myAudience")!;
         }
 
         [HttpPost]
-        public string GenerateToken([FromBody] LoginModel request)
+        public ActionResult<string> GenerateToken([FromBody] LoginModel request)
         {
-            var mySecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret));
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var tokenDescriptor = new SecurityTokenDescriptor
+            var result = validator.ValidateLoginModel(request);
+            if(result)
             {
-                Subject = new ClaimsIdentity(new Claim[]
+                var mySecurityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secret));
+
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var tokenDescriptor = new SecurityTokenDescriptor
                 {
+                    Subject = new ClaimsIdentity(new Claim[]
+                    {
                     new Claim(ClaimTypes.NameIdentifier, request.Login),
                     new Claim(ClaimTypes.Role, "User")
-                }),
-                Expires = DateTime.UtcNow.AddDays(7),
-                Issuer = myIssuer,
-                Audience = myAudience,
-                SigningCredentials = new SigningCredentials(mySecurityKey, SecurityAlgorithms.HmacSha256Signature)
-            };
+                    }),
+                    Expires = DateTime.UtcNow.AddDays(7),
+                    Issuer = myIssuer,
+                    Audience = myAudience,
+                    SigningCredentials = new SigningCredentials(mySecurityKey, SecurityAlgorithms.HmacSha256Signature)
+                };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+                var token = tokenHandler.CreateToken(tokenDescriptor);
+                return tokenHandler.WriteToken(token);
+            }
+            else
+            {
+                logger.LogInformation("Registration with login \"{0}\" failed", request.Login);
+                return StatusCode(400);
+            }
         }
 
         [HttpGet]

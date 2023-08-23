@@ -1,4 +1,5 @@
 ﻿using Azure.Core;
+using FluentValidation;
 using ToDoList.Models;
 
 namespace ToDoList.Services
@@ -7,6 +8,7 @@ namespace ToDoList.Services
     {
         private readonly ITaskRepository taskRegister;
         private readonly ILifeSphereRepository lifeSphereRegister;
+        
         public TaskService(ITaskRepository taskRegister, ILifeSphereRepository lifeSphereRegister)
         {
             this.taskRegister = taskRegister;
@@ -21,8 +23,9 @@ namespace ToDoList.Services
         public void AddTask(CreateTaskItemRequest request)
         {
             TaskItem task = new();
-            InitializeTask(task, request);
-            taskRegister.AddTask(task);
+            var taskItem = InitializeTask(task, request);
+            if(taskItem != null) 
+                taskRegister.AddTask(task);
         }
 
         public bool DeleteTask(int id)

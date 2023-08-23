@@ -1,0 +1,952 @@
+2023-08-23 15:47:59.363 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 15:47:59.494 +03:00 [INF] Creating key {5b5542b3-241e-4ae0-9522-2b6476efdd16} with creation date 2023-08-23 12:47:59Z, activation date 2023-08-23 12:47:59Z, and expiration date 2023-11-21 12:47:59Z.
+2023-08-23 15:47:59.515 +03:00 [INF] Writing data to file 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys\key-5b5542b3-241e-4ae0-9522-2b6476efdd16.xml'.
+2023-08-23 15:47:59.778 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 15:47:59.781 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 15:47:59.782 +03:00 [INF] Hosting environment: Development
+2023-08-23 15:47:59.783 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 15:48:00.580 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 15:48:01.120 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 542.1491ms
+2023-08-23 15:48:01.147 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 15:48:01.151 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 3.8823ms
+2023-08-23 15:48:01.259 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 15:48:01.331 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.8897ms
+2023-08-23 15:48:01.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 15:48:01.549 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - -
+2023-08-23 15:48:01.575 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-08-23 15:48:01.578 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - - - 200 628 image/png 28.2583ms
+2023-08-23 15:48:01.713 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.5916ms
+2023-08-23 15:48:24.654 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 15:48:24.662 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 15:48:24.846 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-23 15:48:24.853 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-23 15:48:24.856 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 401 0 - 202.3743ms
+2023-08-23 15:48:53.048 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-23 15:48:53.072 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 15:48:53.102 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 15:48:53.424 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-23 15:48:53.433 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 322.0816ms
+2023-08-23 15:48:53.438 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 15:48:53.440 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 391.8578ms
+2023-08-23 15:49:30.333 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 15:49:30.338 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2023-08-23 15:49:30.341 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-23 15:49:30.343 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 401 0 - 9.8309ms
+2023-08-23 15:49:52.958 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 15:49:53.041 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 15:49:53.047 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 15:49:54.824 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 15:49:54.880 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 15:49:55.349 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 15:49:55.701 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([DeadLine], [Description], [LifeSphereId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-08-23 15:49:55.732 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-23 15:49:55.734 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2683.414ms
+2023-08-23 15:49:55.735 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 15:49:55.747 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 200 0 - 2788.6232ms
+2023-08-23 15:59:55.530 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 15:59:55.851 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 15:59:55.854 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 15:59:55.856 +03:00 [INF] Hosting environment: Development
+2023-08-23 15:59:55.857 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 15:59:56.477 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 15:59:56.892 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 417.9976ms
+2023-08-23 15:59:56.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 15:59:56.908 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 15:59:56.923 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 12.7580ms
+2023-08-23 15:59:56.950 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.3740ms
+2023-08-23 15:59:57.229 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 15:59:57.445 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.6412ms
+2023-08-23 16:00:07.481 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-23 16:00:07.491 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 16:00:07.639 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 16:00:07.665 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 16:00:07.931 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-23 16:00:07.941 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 266.4266ms
+2023-08-23 16:00:07.948 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 16:00:07.950 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 468.6591ms
+2023-08-23 16:00:35.261 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 16:00:35.352 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:00:35.357 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:00:36.977 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:00:37.046 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:00:37.485 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 16:00:37.810 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([DeadLine], [Description], [LifeSphereId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-08-23 16:00:37.844 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-23 16:00:37.846 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2485.9764ms
+2023-08-23 16:00:37.848 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:00:37.862 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 200 0 - 2600.8289ms
+2023-08-23 16:06:12.455 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 16:06:12.829 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 16:06:12.832 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 16:06:12.834 +03:00 [INF] Hosting environment: Development
+2023-08-23 16:06:12.835 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 16:06:13.278 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 16:06:13.639 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 363.5295ms
+2023-08-23 16:06:13.655 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 16:06:13.658 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 16:06:13.664 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.1050ms
+2023-08-23 16:06:13.699 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.0402ms
+2023-08-23 16:06:13.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 16:06:13.972 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.5829ms
+2023-08-23 16:06:22.993 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 47
+2023-08-23 16:06:23.004 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 16:06:23.143 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 16:06:23.171 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature System.String GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 16:06:23.435 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-23 16:06:23.443 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 265.0532ms
+2023-08-23 16:06:23.452 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 16:06:23.454 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 47 - 200 - text/plain;+charset=utf-8 461.1192ms
+2023-08-23 16:06:50.458 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109
+2023-08-23 16:06:50.551 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:06:50.556 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:06:52.123 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:06:52.182 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:06:52.651 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 16:06:52.970 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([DeadLine], [Description], [LifeSphereId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2023-08-23 16:06:53.016 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-23 16:06:53.018 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2458.6792ms
+2023-08-23 16:06:53.019 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:06:53.035 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109 - 200 0 - 2577.6623ms
+2023-08-23 16:07:19.242 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 16:07:19.255 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:07:19.259 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:07:19.299 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:07:19.307 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:07:19.335 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-23 16:07:19.344 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-23 16:07:19.358 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 95.0539ms
+2023-08-23 16:07:19.360 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:07:19.362 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 120.3335ms
+2023-08-23 16:10:31.673 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 16:10:31.936 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 16:10:31.940 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 16:10:31.941 +03:00 [INF] Hosting environment: Development
+2023-08-23 16:10:31.943 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 16:10:32.536 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 16:10:32.924 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 390.4958ms
+2023-08-23 16:10:32.943 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 16:10:32.946 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 16:10:32.966 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 20.4082ms
+2023-08-23 16:10:32.985 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.8394ms
+2023-08-23 16:10:33.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 16:10:33.257 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.2148ms
+2023-08-23 16:10:55.334 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 16:10:55.622 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 16:10:55.626 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 16:10:55.627 +03:00 [INF] Hosting environment: Development
+2023-08-23 16:10:55.629 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 16:10:56.414 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 16:10:56.805 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 393.3205ms
+2023-08-23 16:10:56.823 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 16:10:56.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 16:10:56.831 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 7.1663ms
+2023-08-23 16:10:56.865 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.7731ms
+2023-08-23 16:10:56.966 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 16:10:57.135 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.7256ms
+2023-08-23 16:11:05.795 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 16:11:05.807 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 16:11:05.951 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:11:05.975 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:11:07.569 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:11:07.630 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:11:08.138 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 16:11:08.293 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-08-23 16:11:08.299 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2315.6091ms
+2023-08-23 16:11:08.301 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:11:08.317 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 200 0 - 2522.0114ms
+2023-08-23 16:11:35.763 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 16:11:35.771 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:11:35.777 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:11:35.813 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:11:35.820 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:11:35.841 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-23 16:11:35.859 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-23 16:11:35.874 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 91.1017ms
+2023-08-23 16:11:35.876 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:11:35.879 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 115.9541ms
+2023-08-23 16:15:33.359 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 16:15:33.616 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 16:15:33.622 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 16:15:33.624 +03:00 [INF] Hosting environment: Development
+2023-08-23 16:15:33.626 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 16:15:34.243 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 16:15:34.635 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 393.8355ms
+2023-08-23 16:15:34.654 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 16:15:34.663 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 8.3710ms
+2023-08-23 16:15:34.762 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 16:15:34.789 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.1040ms
+2023-08-23 16:15:34.895 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 16:15:35.065 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.8956ms
+2023-08-23 16:15:54.578 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 16:15:54.589 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 16:15:54.731 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:15:54.757 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:15:56.333 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:15:56.394 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:15:56.874 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 16:15:57.023 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 16:15:57.032 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2268.4477ms
+2023-08-23 16:15:57.035 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:15:57.045 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 400 - application/problem+json;+charset=utf-8 2467.0706ms
+2023-08-23 16:17:39.047 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 16:17:39.287 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 16:17:39.293 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 16:17:39.295 +03:00 [INF] Hosting environment: Development
+2023-08-23 16:17:39.297 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 16:17:40.010 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 16:17:40.365 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 358.3553ms
+2023-08-23 16:17:40.379 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 16:17:40.382 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 16:17:40.393 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.1817ms
+2023-08-23 16:17:40.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.9713ms
+2023-08-23 16:17:40.513 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 16:17:40.701 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.7510ms
+2023-08-23 16:17:59.359 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112
+2023-08-23 16:17:59.369 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 16:17:59.496 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:17:59.522 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:18:00.951 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:18:01.007 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:18:01.483 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[Grade], [s].[Title], [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Spheres] AS [s]
+LEFT JOIN [Tasks] AS [t] ON [s].[Id] = [t].[LifeSphereId]
+ORDER BY [s].[Id]
+2023-08-23 16:18:01.645 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 16:18:01.657 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 2126.062ms
+2023-08-23 16:18:01.659 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:18:01.671 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 112 - 400 - application/problem+json;+charset=utf-8 2312.8446ms
+2023-08-23 16:18:32.475 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 0
+2023-08-23 16:18:32.495 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:18:32.499 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:18:32.529 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:18:32.536 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:18:32.555 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-23 16:18:32.562 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 57.0295ms
+2023-08-23 16:18:32.564 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 16:18:32.567 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 0 - 400 - application/problem+json;+charset=utf-8 92.2026ms
+2023-08-23 16:18:43.172 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 16:18:43.177 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:18:43.183 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 16:18:43.265 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 16:18:43.286 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 16:18:43.304 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-23 16:18:43.310 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-23 16:18:43.320 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 130.1578ms
+2023-08-23 16:18:43.323 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 16:18:43.325 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 152.4397ms
+2023-08-23 19:42:05.058 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 19:42:05.311 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 19:42:05.315 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 19:42:05.316 +03:00 [INF] Hosting environment: Development
+2023-08-23 19:42:05.318 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 19:42:06.099 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 19:42:06.593 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 496.9634ms
+2023-08-23 19:42:06.608 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 19:42:06.611 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 19:42:06.627 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 16.6110ms
+2023-08-23 19:42:06.671 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.1892ms
+2023-08-23 19:42:06.830 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 19:42:07.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.2701ms
+2023-08-23 19:42:17.176 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 19:42:17.187 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 19:42:17.339 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 19:42:17.363 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 19:42:19.047 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 19:42:19.111 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 19:42:19.268 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 19:42:19.279 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1909.2788ms
+2023-08-23 19:42:19.282 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 19:42:19.297 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 400 - application/problem+json;+charset=utf-8 2120.3398ms
+2023-08-23 20:01:07.836 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:01:08.105 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:01:08.110 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:01:08.112 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:01:08.114 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:01:08.692 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:01:09.072 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 383.0325ms
+2023-08-23 20:01:09.086 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:01:09.088 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:01:09.093 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.5096ms
+2023-08-23 20:01:09.113 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.6576ms
+2023-08-23 20:01:09.213 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:01:09.382 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.2835ms
+2023-08-23 20:01:24.883 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109
+2023-08-23 20:01:24.893 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 20:01:25.040 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:01:25.063 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:01:26.613 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:01:26.682 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:01:26.786 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-23 20:01:26.804 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1729.3457ms
+2023-08-23 20:01:26.806 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:01:26.827 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109 - 400 - application/problem+json;+charset=utf-8 1943.9168ms
+2023-08-23 20:03:20.889 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:03:21.130 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:03:21.133 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:03:21.134 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:03:21.136 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:03:21.861 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:03:22.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 351.7273ms
+2023-08-23 20:03:22.226 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:03:22.226 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:03:22.239 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 12.5175ms
+2023-08-23 20:03:22.260 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.2704ms
+2023-08-23 20:03:22.358 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:03:22.521 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.3761ms
+2023-08-23 20:20:39.131 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:20:39.371 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:20:39.374 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:20:39.375 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:20:39.377 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:20:40.532 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:20:40.971 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 440.7806ms
+2023-08-23 20:20:40.990 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:20:40.993 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:20:41.005 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 12.1082ms
+2023-08-23 20:20:41.067 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 77.1190ms
+2023-08-23 20:20:41.149 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:20:41.364 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 215.4842ms
+2023-08-23 20:20:50.236 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111
+2023-08-23 20:20:50.248 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 20:20:50.380 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:20:50.405 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:20:51.944 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:20:52.007 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:20:52.129 +03:00 [ERR] !!!!Task was not added
+2023-08-23 20:20:52.141 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 20:20:52.153 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1740.3252ms
+2023-08-23 20:20:52.157 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:20:52.175 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111 - 400 - application/problem+json;+charset=utf-8 1939.1443ms
+2023-08-23 20:42:32.304 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:42:32.560 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:42:32.564 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:42:32.566 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:42:32.567 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:42:33.815 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:42:34.268 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 455.2775ms
+2023-08-23 20:42:34.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:42:34.312 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:42:34.318 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.4402ms
+2023-08-23 20:42:34.373 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.3793ms
+2023-08-23 20:42:34.474 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:42:34.683 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 208.2882ms
+2023-08-23 20:42:43.600 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111
+2023-08-23 20:42:43.611 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 20:42:43.756 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:42:43.781 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:42:45.384 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:42:45.455 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:42:45.559 +03:00 [INF] !!!!Task was not added
+2023-08-23 20:42:45.572 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 20:42:45.583 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1794.3092ms
+2023-08-23 20:42:45.586 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:42:45.602 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 111 - 400 - application/problem+json;+charset=utf-8 2002.8340ms
+2023-08-23 20:47:04.362 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:47:04.614 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:47:04.618 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:47:04.620 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:47:04.621 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:47:05.293 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:47:05.740 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 451.1713ms
+2023-08-23 20:47:05.754 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:47:05.758 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:47:05.766 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.7232ms
+2023-08-23 20:47:05.824 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.6991ms
+2023-08-23 20:47:05.906 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:47:06.068 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 162.0101ms
+2023-08-23 20:47:15.842 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109
+2023-08-23 20:47:15.857 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 20:47:15.987 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:47:16.013 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:47:17.558 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:47:17.624 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:47:17.637 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1615.2012ms
+2023-08-23 20:47:17.641 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:47:17.729 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109 - 200 0 - 1886.5605ms
+2023-08-23 20:47:36.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 20:47:36.432 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:36.440 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:47:36.465 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:47:36.488 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:47:36.494 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 50.3343ms
+2023-08-23 20:47:36.496 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:36.531 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 0 - 107.4858ms
+2023-08-23 20:47:43.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 20:47:43.738 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:43.742 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:47:43.839 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:47:43.846 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:47:43.852 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 106.1343ms
+2023-08-23 20:47:43.854 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:43.885 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 0 - 166.1025ms
+2023-08-23 20:47:54.524 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 20:47:54.526 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:54.528 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:47:54.535 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:47:54.541 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:47:54.546 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 13.3405ms
+2023-08-23 20:47:54.548 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 20:47:54.579 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 0 - 55.8131ms
+2023-08-23 20:52:11.190 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 20:52:11.426 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 20:52:11.429 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 20:52:11.431 +03:00 [INF] Hosting environment: Development
+2023-08-23 20:52:11.432 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 20:52:11.890 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 20:52:12.239 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 351.4840ms
+2023-08-23 20:52:12.257 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 20:52:12.257 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 20:52:12.263 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.3172ms
+2023-08-23 20:52:12.292 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.1202ms
+2023-08-23 20:52:12.397 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 20:52:12.566 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.5306ms
+2023-08-23 20:52:26.367 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109
+2023-08-23 20:52:26.377 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 20:52:26.514 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:52:26.538 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 20:52:28.104 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 20:52:28.179 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 20:52:28.198 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1648.1075ms
+2023-08-23 20:52:28.202 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 20:52:28.286 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109 - 200 0 - 1919.7254ms
+2023-08-23 21:27:44.989 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 21:27:45.234 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 21:27:45.237 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 21:27:45.238 +03:00 [INF] Hosting environment: Development
+2023-08-23 21:27:45.239 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 21:27:46.765 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 21:27:47.159 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 396.5958ms
+2023-08-23 21:27:47.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 21:27:47.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 21:27:47.191 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 15.9024ms
+2023-08-23 21:27:47.250 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.9917ms
+2023-08-23 21:27:47.345 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 21:27:47.532 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 186.9211ms
+2023-08-23 21:27:52.947 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/TaskItems - -
+2023-08-23 21:27:52.956 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 21:27:53.083 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 21:27:53.097 +03:00 [INF] Route matched with {action = "GetTasks", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] GetTasks() on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 21:27:54.554 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 21:27:54.592 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 21:27:54.780 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[DeadLine], [t].[Description], [t].[LifeSphereId], [t].[Title]
+FROM [Tasks] AS [t]
+2023-08-23 21:27:54.842 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ToDoList.Models.TaskItem, ToDoList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-23 21:27:54.868 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList) in 1765.6915ms
+2023-08-23 21:27:54.870 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.GetTasks (ToDoList)'
+2023-08-23 21:27:54.881 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/TaskItems - - - 200 - application/json;+charset=utf-8 1934.0319ms
+2023-08-23 21:28:12.254 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109
+2023-08-23 21:28:12.259 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 21:28:12.269 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 21:28:12.283 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 21:28:12.294 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 21:28:12.346 +03:00 [INF] !!!!Task was not added
+2023-08-23 21:28:12.348 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 21:28:12.351 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 78.8235ms
+2023-08-23 21:28:12.352 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 21:28:12.353 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 109 - 400 - application/problem+json;+charset=utf-8 99.3683ms
+2023-08-23 21:51:40.167 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 21:51:40.364 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 21:51:40.367 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 21:51:40.369 +03:00 [INF] Hosting environment: Development
+2023-08-23 21:51:40.370 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 21:51:40.797 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 21:51:41.050 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 257.7165ms
+2023-08-23 21:51:41.059 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 21:51:41.060 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 21:51:41.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 8.0076ms
+2023-08-23 21:51:41.082 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.4353ms
+2023-08-23 21:51:41.152 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 21:51:41.262 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.6461ms
+2023-08-23 21:51:53.388 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 42
+2023-08-23 21:51:53.394 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 21:51:53.471 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 21:51:53.485 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 21:51:53.544 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 21:51:53.553 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 63.6138ms
+2023-08-23 21:51:53.556 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 21:51:53.558 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 42 - 400 - application/problem+json;+charset=utf-8 170.1390ms
+2023-08-23 21:57:00.674 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 21:57:00.840 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 21:57:00.842 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 21:57:00.843 +03:00 [INF] Hosting environment: Development
+2023-08-23 21:57:00.844 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 21:57:01.174 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 21:57:01.416 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 242.6144ms
+2023-08-23 21:57:01.428 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 21:57:01.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 21:57:01.440 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 10.2626ms
+2023-08-23 21:57:01.455 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.3729ms
+2023-08-23 21:57:01.519 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 21:57:01.629 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.6720ms
+2023-08-23 21:57:24.811 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 42
+2023-08-23 21:57:24.817 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 21:57:24.898 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 21:57:24.913 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 21:57:24.978 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 21:57:24.984 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 66.4968ms
+2023-08-23 21:57:24.988 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 21:57:24.989 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 42 - 400 - application/problem+json;+charset=utf-8 177.8120ms
+2023-08-23 21:59:09.871 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 21:59:10.068 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 21:59:10.071 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 21:59:10.072 +03:00 [INF] Hosting environment: Development
+2023-08-23 21:59:10.073 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 21:59:10.573 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 21:59:10.798 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 226.7923ms
+2023-08-23 21:59:10.808 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 21:59:10.809 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 21:59:10.818 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 8.1363ms
+2023-08-23 21:59:10.831 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.5161ms
+2023-08-23 21:59:10.898 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 21:59:11.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.7221ms
+2023-08-23 22:00:17.242 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110
+2023-08-23 22:00:17.247 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 22:00:17.324 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 22:00:17.338 +03:00 [INF] Route matched with {action = "AddTask", controller = "TaskItems"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] AddTask(ToDoList.CreateTaskItemRequest) on controller ToDoList.Controllers.TaskItemsController (ToDoList).
+2023-08-23 22:00:18.261 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-23 22:00:18.298 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-08-23 22:00:18.362 +03:00 [INF] !!!!Task "BGD" was not added
+2023-08-23 22:00:18.368 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 22:00:18.375 +03:00 [INF] Executed action ToDoList.Controllers.TaskItemsController.AddTask (ToDoList) in 1031.3172ms
+2023-08-23 22:00:18.376 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.TaskItemsController.AddTask (ToDoList)'
+2023-08-23 22:00:18.383 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/TaskItems application/json 110 - 400 - application/problem+json;+charset=utf-8 1140.7513ms
+2023-08-23 22:09:47.591 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 22:09:47.785 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 22:09:47.787 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 22:09:47.788 +03:00 [INF] Hosting environment: Development
+2023-08-23 22:09:47.788 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 22:09:48.266 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 22:09:48.512 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 248.1607ms
+2023-08-23 22:09:48.525 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 22:09:48.527 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 22:09:48.536 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 9.1365ms
+2023-08-23 22:09:48.550 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.8019ms
+2023-08-23 22:09:48.617 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 22:09:48.724 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.6932ms
+2023-08-23 22:10:07.763 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 52
+2023-08-23 22:10:07.768 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 22:10:07.842 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 22:10:07.857 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 22:10:07.908 +03:00 [INF] Registration with login "LErjjchhyy" failed
+2023-08-23 22:10:07.916 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-23 22:10:07.922 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 60.4654ms
+2023-08-23 22:10:07.926 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 22:10:07.927 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 52 - 400 - application/problem+json;+charset=utf-8 164.4507ms
+2023-08-23 22:10:25.996 +03:00 [INF] User profile is available. Using 'C:\Users\dpogr\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 22:10:26.180 +03:00 [INF] Now listening on: http://localhost:5000
+2023-08-23 22:10:26.183 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 22:10:26.184 +03:00 [INF] Hosting environment: Development
+2023-08-23 22:10:26.186 +03:00 [INF] Content root path: C:\Users\dpogr\source\repos\Hillel_ToDoList\ToDoList
+2023-08-23 22:10:26.631 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - -
+2023-08-23 22:10:26.875 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 244.7168ms
+2023-08-23 22:10:26.885 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink - -
+2023-08-23 22:10:26.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 22:10:26.893 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.0147ms
+2023-08-23 22:10:26.905 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.0848ms
+2023-08-23 22:10:26.974 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - -
+2023-08-23 22:10:27.086 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.0136ms
+2023-08-23 22:10:51.571 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Login application/json 56
+2023-08-23 22:10:51.576 +03:00 [WRN] Failed to determine the https port for redirect.
+2023-08-23 22:10:51.652 +03:00 [INF] Executing endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 22:10:51.665 +03:00 [INF] Route matched with {action = "GenerateToken", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] GenerateToken(ToDoList.Models.LoginModel) on controller ToDoList.Controllers.LoginController (ToDoList).
+2023-08-23 22:10:51.857 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-08-23 22:10:51.862 +03:00 [INF] Executed action ToDoList.Controllers.LoginController.GenerateToken (ToDoList) in 191.4201ms
+2023-08-23 22:10:51.865 +03:00 [INF] Executed endpoint 'ToDoList.Controllers.LoginController.GenerateToken (ToDoList)'
+2023-08-23 22:10:51.867 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Login application/json 56 - 200 - text/plain;+charset=utf-8 296.3424ms

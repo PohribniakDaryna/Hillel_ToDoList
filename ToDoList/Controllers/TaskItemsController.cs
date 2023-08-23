@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
+using System.Threading.Tasks;
 using ToDoList.Services;
 
 namespace ToDoList.Controllers
@@ -9,9 +11,16 @@ namespace ToDoList.Controllers
     public class TaskItemsController : ControllerBase
     {
         private readonly ITaskService taskService;
-        public TaskItemsController(ITaskService taskService)
+        private readonly ITaskValidator validator;
+        private readonly ILogger<TaskItemsController> logger;
+        public TaskItemsController(
+            ITaskService taskService, 
+            ITaskValidator validator, 
+            ILogger<TaskItemsController> logger)
         {
             this.taskService = taskService;
+            this.validator = validator;
+            this.logger = logger;
         }
 
         [HttpGet]
@@ -26,8 +35,18 @@ namespace ToDoList.Controllers
         public ActionResult<bool> AddTask([FromBody] CreateTaskItemRequest request)
         {
             if (request == null) return StatusCode(204);
-            taskService.AddTask(request);
-            return Ok();
+            bool result = validator.ValidateTask(request);
+            if (result)
+            {
+                taskService.AddTask(request);
+                return Ok();
+            }
+            else
+            {
+                logger.LogInformation("Task \"{0}\" was not added", request.Title);
+                return StatusCode(400);
+            }
+
         }
         
         [HttpDelete("{id}")]
