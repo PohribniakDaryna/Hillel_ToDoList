@@ -4,7 +4,6 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
-using ToDoList.Models;
 using ToDoList.Services;
 
 namespace ToDoList
@@ -15,7 +14,7 @@ namespace ToDoList
         {
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
-                .WriteTo.File(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "logs", "diagnostics.txt"),
+                .WriteTo.File(Path.Combine(Directory.GetCurrentDirectory(), "logs", "diagnostics.txt"),
                 rollingInterval: RollingInterval.Day,
                 fileSizeLimitBytes: 10 * 1024 * 1024,
                 retainedFileCountLimit: 2,
@@ -92,11 +91,9 @@ namespace ToDoList
                 });
             builder.Services.AddAuthorization();
 
-            builder.Services.AddTransient<ITaskItem, TaskItem>();
             builder.Services.AddTransient<ITaskService, TaskService>();
             builder.Services.AddScoped<ITaskRepository, DBTaskRepository>();
 
-            builder.Services.AddTransient<ILifeSphere, LifeSphere>();
             builder.Services.AddTransient<ILifeSphereService, LifeSphereService>();
             builder.Services.AddScoped<ILifeSphereRepository, DBLifeSphereRepository>();
 
@@ -131,7 +128,7 @@ namespace ToDoList
             });
 
             app.MapControllers();
-            app.MapGet("v2/TaskItems/{id}",
+            app.MapGet("v2/TaskItems/GetTaskById/{id}",
                 (HttpContext requestDelegate, int id) =>
                 {
                     var service = requestDelegate.RequestServices.GetService<ITaskService>()!;

@@ -4,11 +4,11 @@ namespace ToDoList
 {
     public class LogFilter : Attribute, IActionFilter
     {
-        public LogFilter(ILogger<LogFilter> logger ) 
-        { 
-            Logger= logger;
+        public LogFilter(ILogger<LogFilter> logger)
+        {
+            Logger = logger;
         }
-        public ILogger<LogFilter> Logger { get;}
+        public ILogger<LogFilter> Logger { get; }
         public void OnActionExecuted(ActionExecutedContext context)
         {
             Logger.LogInformation($"Request finished.");

@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 using ToDoList.Services;
 
 namespace ToDoList.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class LifeSpheresController : ControllerBase
     {
@@ -17,15 +16,15 @@ namespace ToDoList.Controllers
         }
 
         [HttpGet]
-        public ActionResult<bool> GetLifeSpheres()
+        public ActionResult GetLifeSpheres()
         {
             var lifeSpheres = lifeSphereService.GetLifeSpheres();
-            return lifeSpheres.Count > 0 ? (ActionResult<bool>)Ok(lifeSpheres) : (ActionResult<bool>)StatusCode(204);
+            return lifeSpheres.Count > 0 ? Ok(lifeSpheres) : StatusCode(204);
         }
 
         [HttpPost]
         [Authorize(Roles = "User")]
-        public ActionResult<bool> AddLifeSphere([FromBody] CreateLifeSphereRequest request)
+        public ActionResult AddLifeSphere([FromBody] CreateLifeSphereRequest request)
         {
             if (request == null) return StatusCode(204);
             lifeSphereService.AddLifeSphere(request);
@@ -33,8 +32,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
-        public ActionResult<bool> DeleteLifeSphere(int id)
+        public ActionResult DeleteLifeSphere(int id)
         {
             bool result = lifeSphereService.DeleteLifeSphere(id);
             if (result == false) return StatusCode(204);
@@ -42,16 +40,15 @@ namespace ToDoList.Controllers
         }
 
         [HttpPut]
-        [Authorize]
-        public ActionResult<bool> UpdateLifeSphere(int id, [FromBody] CreateLifeSphereRequest request)
+        public ActionResult UpdateLifeSphere(int id, [FromBody] CreateLifeSphereRequest request)
         {
             var lifeSphere = lifeSphereService.UpdateLifeSphere(id, request);
-            if (lifeSphere == null) return StatusCode(204);
+            if (lifeSphere == null) return StatusCode(400);
             return Ok(lifeSphere);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<bool> GetLifeSphereById(int id)
+        public ActionResult GetLifeSphereById([FromRoute] int id)
         {
             var lifeSphere = lifeSphereService.GetLifeSphereById(id);
             if (lifeSphere == null) return StatusCode(204);

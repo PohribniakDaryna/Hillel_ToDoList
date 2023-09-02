@@ -11,7 +11,7 @@ namespace ToDoList.Services
             DbContext = dbContext;
         }
 
-        public ILifeSphere? GetLifeSphereById(int id)
+        public LifeSphere? GetLifeSphereById(int id)
         {
             return DbContext.Spheres.
                 Include(x => x.Tasks).

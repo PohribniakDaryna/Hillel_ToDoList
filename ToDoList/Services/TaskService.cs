@@ -1,6 +1,4 @@
-﻿using Azure.Core;
-using FluentValidation;
-using ToDoList.Models;
+﻿using ToDoList.Models;
 
 namespace ToDoList.Services
 {
@@ -8,14 +6,14 @@ namespace ToDoList.Services
     {
         private readonly ITaskRepository taskRegister;
         private readonly ILifeSphereRepository lifeSphereRegister;
-        
+
         public TaskService(ITaskRepository taskRegister, ILifeSphereRepository lifeSphereRegister)
         {
             this.taskRegister = taskRegister;
             this.lifeSphereRegister = lifeSphereRegister;
         }
 
-        public ITaskItem? GetTaskById(int id)
+        public TaskItem? GetTaskById(int id)
         {
             return taskRegister.GetTaskById(id);
         }
@@ -24,7 +22,7 @@ namespace ToDoList.Services
         {
             TaskItem task = new();
             var taskItem = InitializeTask(task, request);
-            if(taskItem != null) 
+            if (taskItem != null)
                 taskRegister.AddTask(task);
         }
 
@@ -39,13 +37,13 @@ namespace ToDoList.Services
             return true;
         }
 
-        public ITaskItem? UpdateTask(int id, CreateTaskItemRequest request)
+        public TaskItem? UpdateTask(int id, CreateTaskItemRequest request)
         {
             var task = taskRegister.GetTaskById(id);
             if (task != null)
             {
                 InitializeTask(task, request);
-                taskRegister.UpdateTask(id, (TaskItem)task);
+                taskRegister.UpdateTask(id, task);
             }
             return task;
         }
@@ -59,9 +57,12 @@ namespace ToDoList.Services
         {
             List<int> sphereIdList = new();
             var spheres = lifeSphereRegister.GetLifeSpheres();
-            foreach (var item in spheres)
+            if (spheres.Count > 0)
             {
-                sphereIdList.Add(item.Id);
+                foreach (var item in spheres)
+                {
+                    sphereIdList.Add(item.Id);
+                }
             }
             return sphereIdList;
         }
@@ -75,7 +76,7 @@ namespace ToDoList.Services
                 return false;
         }
 
-        private TaskItem InitializeTask(ITaskItem task, CreateTaskItemRequest request)
+        private TaskItem InitializeTask(TaskItem task, CreateTaskItemRequest request)
         {
             task.Title = request.Title;
             task.DeadLine = request.DeadLine;
@@ -86,7 +87,7 @@ namespace ToDoList.Services
                 task.LifeSphereId = request.LifeSphereId;
             else
                 task.LifeSphereId = null;
-            return (TaskItem)task;
+            return task;
         }
     }
 }

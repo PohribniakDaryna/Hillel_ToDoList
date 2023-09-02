@@ -5,12 +5,12 @@ namespace ToDoList.Services
     public class DBTaskRepository : ITaskRepository
     {
         public ApplicationContext DbContext { get; }
-        public DBTaskRepository(ApplicationContext dbContext)
+        public DBTaskRepository(ApplicationContext dbContext, ApplicationContext dbContext1)
         {
             DbContext = dbContext;
         }
 
-        public ITaskItem? GetTaskById(int taskId)
+        public TaskItem? GetTaskById(int taskId)
         {
             return DbContext.Tasks.FirstOrDefault(x => x.Id == taskId);
         }

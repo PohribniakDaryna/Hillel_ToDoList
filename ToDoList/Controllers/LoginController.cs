@@ -1,6 +1,4 @@
-﻿using Azure.Core;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -9,7 +7,7 @@ using ToDoList.Models;
 
 namespace ToDoList.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class LoginController : ControllerBase
     {
@@ -57,7 +55,7 @@ namespace ToDoList.Controllers
             }
             else
             {
-                logger.LogInformation("Registration with login \"{0}\" failed", request.Login);
+                logger.LogInformation("Registration with login \"{request.Login}\" failed", request.Login);
                 return StatusCode(400);
             }
         }
