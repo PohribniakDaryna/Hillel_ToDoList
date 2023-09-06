@@ -20,18 +20,9 @@ namespace ToDoList
 
         public bool ValidateLoginModel(LoginModel login)
         {
-            UserValidator valid = new UserValidator();
+            UserValidator valid = new ();
             ValidationResult results = valid.Validate(login);
-
-            if (!results.IsValid)
-            {
-                foreach (var failure in results.Errors)
-                {
-                    Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
-                }
-                return false;
-            }
-            return true;
+            return Helper.IsValidationSucceeded(results);
         }
     }
 }

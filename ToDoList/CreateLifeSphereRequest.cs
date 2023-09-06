@@ -1,6 +1,4 @@
-﻿using ToDoList.Models;
-
-namespace ToDoList
+﻿namespace ToDoList
 {
     public class CreateLifeSphereRequest
     {

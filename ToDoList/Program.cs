@@ -1,10 +1,10 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
-using ToDoList.Models;
 using ToDoList.Services;
 
 namespace ToDoList
@@ -13,16 +13,7 @@ namespace ToDoList
     {
         public static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration()
-                .WriteTo.Console()
-                .WriteTo.File(System.IO.Path.Combine(Directory.GetCurrentDirectory(), "logs", "diagnostics.txt"),
-                rollingInterval: RollingInterval.Day,
-                fileSizeLimitBytes: 10 * 1024 * 1024,
-                retainedFileCountLimit: 2,
-                rollOnFileSizeLimit: true,
-                shared: true,
-                flushToDiskInterval: TimeSpan.FromSeconds(1))
-                .CreateLogger();
+            Helper.CreateLogger();
 
             var builder = WebApplication.CreateBuilder(args);
 
@@ -35,10 +26,11 @@ namespace ToDoList
             });
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+            
             builder.Services.AddSwaggerGen(c =>
             {
+
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "My API",
@@ -54,19 +46,21 @@ namespace ToDoList
                 });
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
-                    {
-                     new OpenApiSecurityScheme
                      {
-                       Reference = new OpenApiReference
-                       {
-                         Type = ReferenceType.SecurityScheme,
-                         Id = "Bearer"
-                       }
-                      },
-                      new string[] { }
-                    }
+                      new OpenApiSecurityScheme
+                      {
+                        Reference = new OpenApiReference
+                        {
+                          Type = ReferenceType.SecurityScheme,
+                          Id = "Bearer"
+                        }
+                       },
+                       new string[] { }
+                     }
                  });
+
             });
+           
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -92,16 +86,14 @@ namespace ToDoList
                 });
             builder.Services.AddAuthorization();
 
-            builder.Services.AddTransient<ITaskItem, TaskItem>();
             builder.Services.AddTransient<ITaskService, TaskService>();
             builder.Services.AddScoped<ITaskRepository, DBTaskRepository>();
 
-            builder.Services.AddTransient<ILifeSphere, LifeSphere>();
             builder.Services.AddTransient<ILifeSphereService, LifeSphereService>();
             builder.Services.AddScoped<ILifeSphereRepository, DBLifeSphereRepository>();
 
-            builder.Services.AddTransient<ITaskValidator, TaskValidator>();
-            builder.Services.AddTransient<IUserValidator, UserValidator>();
+            builder.Services.AddScoped<ITaskValidator, TaskValidator>();
+            builder.Services.AddScoped<IUserValidator, UserValidator>();
 
             var app = builder.Build();
 
@@ -131,7 +123,8 @@ namespace ToDoList
             });
 
             app.MapControllers();
-            app.MapGet("v2/TaskItems/{id}",
+
+            app.MapGet("v2/TaskItems/GetTaskById/{id}",
                 (HttpContext requestDelegate, int id) =>
                 {
                     var service = requestDelegate.RequestServices.GetService<ITaskService>()!;
@@ -141,7 +134,6 @@ namespace ToDoList
                 })
              .WithName("Test")
              .WithOpenApi();
-
             app.Run();
         }
     }

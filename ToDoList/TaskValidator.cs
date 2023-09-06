@@ -13,18 +13,9 @@ namespace ToDoList
 
         public bool ValidateTask(CreateTaskItemRequest task)
         {
-            TaskValidator valid = new ();
+            TaskValidator valid = new();
             ValidationResult results = valid.Validate(task);
-
-            if (!results.IsValid)
-            {
-                foreach (var failure in results.Errors)
-                {
-                    Console.WriteLine("Property " + failure.PropertyName + " failed validation. Error was: " + failure.ErrorMessage);
-                }
-                return false;
-            }
-            return true;
+            return Helper.IsValidationSucceeded(results);
         }
     }
 }

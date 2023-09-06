@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Rewrite;
-using System.Threading.Tasks;
 using ToDoList.Services;
 
 namespace ToDoList.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class TaskItemsController : ControllerBase
     {
@@ -14,8 +12,8 @@ namespace ToDoList.Controllers
         private readonly ITaskValidator validator;
         private readonly ILogger<TaskItemsController> logger;
         public TaskItemsController(
-            ITaskService taskService, 
-            ITaskValidator validator, 
+            ITaskService taskService,
+            ITaskValidator validator,
             ILogger<TaskItemsController> logger)
         {
             this.taskService = taskService;
@@ -24,15 +22,15 @@ namespace ToDoList.Controllers
         }
 
         [HttpGet]
-        public ActionResult<bool> GetTasks()
+        public ActionResult GetTasks()
         {
             var tasks = taskService.GetTasks();
-            return tasks.Count > 0 ? (ActionResult<bool>)Ok(tasks) : (ActionResult<bool>)StatusCode(204);
+            return tasks.Count > 0 ? Ok(tasks) : StatusCode(204);
         }
 
         [HttpPost]
         [Authorize(Roles = "User")]
-        public ActionResult<bool> AddTask([FromBody] CreateTaskItemRequest request)
+        public ActionResult AddTask([FromBody] CreateTaskItemRequest request)
         {
             if (request == null) return StatusCode(204);
             bool result = validator.ValidateTask(request);
@@ -43,15 +41,13 @@ namespace ToDoList.Controllers
             }
             else
             {
-                logger.LogInformation("Task \"{0}\" was not added", request.Title);
+                logger.LogInformation($"Task \"{request.Title}\" was not added");
                 return StatusCode(400);
             }
-
         }
-        
+
         [HttpDelete("{id}")]
-        [Authorize]
-        public ActionResult<bool> DeleteTask(int id)
+        public ActionResult DeleteTask(int id)
         {
             bool result = taskService.DeleteTask(id);
             if (result == false) return StatusCode(204);
@@ -59,16 +55,15 @@ namespace ToDoList.Controllers
         }
 
         [HttpPut]
-        [Authorize]
-        public ActionResult<bool> UpdateTask(int id, [FromBody] CreateTaskItemRequest request)
+        public ActionResult UpdateTask(int id, [FromBody] CreateTaskItemRequest request)
         {
             var task = taskService.UpdateTask(id, request);
-            if (task == null) return StatusCode(204);
+            if (task == null) return StatusCode(400);
             return Ok(task);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<bool> GetTaskById([FromRoute] int id)
+        public ActionResult GetTaskById([FromRoute] int id)
         {
             var task = taskService.GetTaskById(id);
             if (task == null) return StatusCode(204);

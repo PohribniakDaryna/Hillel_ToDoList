@@ -10,7 +10,7 @@ namespace ToDoList.Services
             this.register = register;
         }
 
-        public ILifeSphere? GetLifeSphereById(int id)
+        public LifeSphere? GetLifeSphereById(int id)
         {
             return register.GetLifeSphereById(id);
         }
@@ -33,13 +33,13 @@ namespace ToDoList.Services
             return true;
         }
 
-        public ILifeSphere? UpdateLifeSphere(int id, CreateLifeSphereRequest request)
+        public LifeSphere? UpdateLifeSphere(int id, CreateLifeSphereRequest request)
         {
             var lifeSphere = register.GetLifeSphereById(id);
             if (lifeSphere != null)
             {
                 InitializeLifeSphere(lifeSphere, request);
-                register.UpdateLifeSphere(id, (LifeSphere)lifeSphere);
+                register.UpdateLifeSphere(id, lifeSphere);
             }
             return lifeSphere;
         }
@@ -49,12 +49,12 @@ namespace ToDoList.Services
             return register.GetLifeSpheres();
         }
 
-        private static LifeSphere InitializeLifeSphere(ILifeSphere lifeSphere, CreateLifeSphereRequest request)
+        private static LifeSphere InitializeLifeSphere(LifeSphere lifeSphere, CreateLifeSphereRequest request)
         {
             lifeSphere.Title = request.Title;
             lifeSphere.Description = request.Description;
             lifeSphere.Grade = request.Grade;
-            return (LifeSphere)lifeSphere;
+            return lifeSphere;
         }
     }
 }
