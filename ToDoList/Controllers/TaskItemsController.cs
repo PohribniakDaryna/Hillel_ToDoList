@@ -41,10 +41,9 @@ namespace ToDoList.Controllers
             }
             else
             {
-                logger.LogInformation("Task \"{request.Title}\" was not added", request.Title);
+                logger.LogInformation($"Task \"{request.Title}\" was not added");
                 return StatusCode(400);
             }
-
         }
 
         [HttpDelete("{id}")]

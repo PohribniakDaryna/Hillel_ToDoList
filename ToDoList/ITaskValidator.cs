@@ -1,9 +1,7 @@
-﻿using ToDoList.Models;
-
-namespace ToDoList
+﻿namespace ToDoList
 {
     public interface ITaskValidator
     {
-        bool ValidateTask(CreateTaskItemRequest task);
+       bool ValidateTask(CreateTaskItemRequest task);
     }
 }

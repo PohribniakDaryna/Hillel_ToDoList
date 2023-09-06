@@ -55,7 +55,7 @@ namespace ToDoList.Controllers
             }
             else
             {
-                logger.LogInformation("Registration with login \"{request.Login}\" failed", request.Login);
+                logger.LogInformation($"Registration with login \"{request.Login}\" failed");
                 return StatusCode(400);
             }
         }
